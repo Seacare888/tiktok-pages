@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>TikTok Login Demo</title>
+  <meta charset="UTF-8">
+  <title>Seacare GMV TikTok Integration Demo</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       padding: 40px;
-      background: #f8f8f8;
-      text-align: center;
+      background: #f4f4f4;
     }
     h1 {
-      color: #111;
+      color: #333;
     }
-    button {
+    .button {
       background-color: #010101;
       color: white;
       padding: 14px 24px;
@@ -21,38 +20,34 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      margin-top: 30px;
+      margin-top: 20px;
     }
-    .result {
-      margin-top: 40px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 6px;
-      display: inline-block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .note {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+      max-width: 600px;
     }
   </style>
 </head>
 <body>
 
-  <h1>🔐 使用 TikTok 登录</h1>
-  <p>点击下方按钮开始 TikTok 授权登录流程</p>
-  
-  <button onclick="handleTikTokLogin()">使用 TikTok 登录</button>
+  <h1>Seacare GMV Manager - TikTok Integration Demo</h1>
 
-  <div class="result" id="loginResult" style="display:none;">
-    <h3>✅ 登录成功！</h3>
-    <p>TikTok 用户：<strong>demo_user_123</strong></p>
-    <p>UID: <strong>1234567890</strong></p>
+  <p>This is a simulation of the end-to-end integration with TikTok Login Kit.</p>
+
+  <button class="button" onclick="handleLogin()">🚀 使用 TikTok 登录</button>
+
+  <div class="note">
+    <p><strong>说明：</strong>此页面用于展示 TikTok 登录集成的基本流程，包括用户点击按钮后授权 TikTok 登录，并获取基本用户信息。</p>
+    <p>请在 Demo Video 中录制该操作并展示页面加载与按钮点击后的交互流程。</p>
   </div>
 
   <script>
-    function handleTikTokLogin() {
-      alert("跳转至 TikTok 授权页（演示）...");
-      setTimeout(() => {
-        document.getElementById('loginResult').style.display = 'block';
-      }, 1500);
+    function handleLogin() {
+      alert("模拟跳转到 TikTok 登录页面...\n（此为演示用途）");
     }
   </script>
+
 </body>
 </html>
