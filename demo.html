@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TikTok Login Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+      background: #f8f8f8;
+      text-align: center;
+    }
+    h1 {
+      color: #111;
+    }
+    button {
+      background-color: #010101;
+      color: white;
+      padding: 14px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    .result {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔐 使用 TikTok 登录</h1>
+  <p>点击下方按钮开始 TikTok 授权登录流程</p>
+  
+  <button onclick="handleTikTokLogin()">使用 TikTok 登录</button>
+
+  <div class="result" id="loginResult" style="display:none;">
+    <h3>✅ 登录成功！</h3>
+    <p>TikTok 用户：<strong>demo_user_123</strong></p>
+    <p>UID: <strong>1234567890</strong></p>
+  </div>
+
+  <script>
+    function handleTikTokLogin() {
+      alert("跳转至 TikTok 授权页（演示）...");
+      setTimeout(() => {
+        document.getElementById('loginResult').style.display = 'block';
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
